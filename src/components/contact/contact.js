@@ -3,7 +3,7 @@ import './contact.css'
 import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Location from "../../img/location.png"
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 import {ThemeContext} from '../../context'
 
 
@@ -17,7 +17,7 @@ const contact = () => {
     
     const handelSubmit = (e)=>{
         e.preventDefault()
-        
+        /*
         emailjs.sendForm('service_u6u5tld', 'template_op5dsjg', formRef.current, 'user_hINgegAG3KQH8xXBzSOcV')
         .then((result) => {
             console.log(result.text);
@@ -25,7 +25,7 @@ const contact = () => {
         }, (error) => {
             console.log(error.text);
         });
-        
+       */ 
     }
     
     return (
