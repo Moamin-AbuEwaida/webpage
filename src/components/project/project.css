@@ -1,0 +1,43 @@
+.container-project{
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.project-browser{
+    height: 20px;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.project-circle{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.project-img{
+    width: 100%;
+    transition: all 10s ease;
+}
+
+.container-project:hover .container-project-img{
+    transform: translateY(-100%) ;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container-project{
+    width: 40%;
+    height: 20vh;
+    }
+
+}
