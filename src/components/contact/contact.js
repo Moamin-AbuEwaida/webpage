@@ -10,20 +10,22 @@ import {ThemeContext} from '../../context'
 
 const contact = () => {
     const theme = useContext(ThemeContext);
-      const darkMode = theme.state.darkMode;
+    const darkMode = theme.state.darkMode;
 
     const formRef =  useRef()
     const [done, setDone] = useState(false)
     
     const handelSubmit = (e)=>{
         e.preventDefault()
-         emailjs.sendForm('service_u6u5tld', 'template_op5dsjg', formRef.current, 'user_hINgegAG3KQH8xXBzSOcV')
-      .then((result) => {
-          console.log(result.text);
-          setDone(true)
-      }, (error) => {
-          console.log(error.text);
-      });
+        
+        emailjs.sendForm('service_u6u5tld', 'template_op5dsjg', formRef.current, 'user_hINgegAG3KQH8xXBzSOcV')
+        .then((result) => {
+            console.log(result.text);
+            setDone(true)
+        }, (error) => {
+            console.log(error.text);
+        });
+        
     }
     
     return (
